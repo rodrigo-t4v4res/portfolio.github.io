@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar e-mail</title>
+    <title>Contato | Portfólio Rodrigo Tavares Vieira</title>
 </head>
 
 <body>
     <form action="https://formspree.io/f/mwpobylp" method="POST">
         <!--formspree é uma API grátis quee envia o formulário diretamente para o email associado-->
-        <input type="hidden" name="_captcha" value="true">
         <label for="nome">Nome:
             <br>
-            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
         </label>
 
         <br><br>
 
         <label for="email">E-mail:
             <br>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" required>
         </label>
 
         <br><br>
@@ -28,7 +27,7 @@
         <label for="telefone_para_contato">Telefone para contato:
             <br>
             <input type="tel" name="telefone_para_contato" id="telefone_para_contato"
-                placeholder="Telefone para contato" required>
+                placeholder="(00) 00000-0000" required>
         </label>
 
         <br><br>
@@ -42,14 +41,14 @@
 
         <label for="mensagem">Mensagem:
             <br>
-            <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+            <textarea name="mensagem" id="mensagem" placeholder="Desreva sua mensagem aqui..." required></textarea>
         </label>
 
         <br><br>
 
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+        <input type="hidden" name="_next" value="https://rodrigo-t4v4res.github.io/portfolio.github.io/#introducao">
 
-        <input type="submit" value="Enviar mensagem">
+        <button type="submit">Enviar mensagem!</button>
     </form>
 </body>
 
